@@ -1,4 +1,4 @@
-# Effectra\Generator Package
+# Effectra\Generator
 
 The Effectra\Generator package provides a set of tools for generating PHP class files and configuration files.
 
