@@ -101,7 +101,6 @@ class Template implements TemplateInterface
         return $this->consts;
     }
 
-
     public function getMethods(): array
     {
         return $this->methods;
