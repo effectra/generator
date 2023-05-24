@@ -7,27 +7,70 @@ namespace Effectra\Generator;
 use Effectra\Fs\File;
 use Effectra\Generator\Contracts\TemplateInterface;
 
+/**
+ * Class Template
+ *
+ * This class represents a template for generating code snippets.
+ */
 class Template implements TemplateInterface
 {
 
+       /**
+     * @var string|null The namespace of the template.
+     */
     protected $namespace;
 
+    /**
+     * @var string|null The class that the template extends.
+     */
     protected $extends;
 
+    /**
+     * @var string|null The interface that the template implements.
+     */
     protected $implements;
 
+    /**
+     * @var array The packages included in the template.
+     */
     protected $packages = [];
 
+    /**
+     * @var array The variables included in the template.
+     */
     protected $vars = [];
 
+    /**
+     * @var array The constants included in the template.
+     */
     protected $consts = [];
 
+    /**
+     * @var array The methods included in the template.
+     */
     protected $methods = [];
 
+    /**
+     * @var array The traits included in the template.
+     */
     protected $traits = [];
 
+    /**
+     * @var string The content of the file generated from the template.
+     */
     protected $fileContent = "";
 
+
+    /**
+     * Template constructor.
+     *
+     * @param string|null $namespace The namespace for the template.
+     * @param array $packages The packages to include in the template.
+     * @param array $vars The variables to include in the template.
+     * @param array $consts The constants to include in the template.
+     * @param array $methods The methods to include in the template.
+     * @param array $traits The traits to include in the template.
+     */
     public function __construct(string $namespace = null, array $packages = [], array $vars = [], array $consts = [], array $methods = [], array $traits = [])
     {
         $this->namespace = $namespace;
