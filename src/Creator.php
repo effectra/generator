@@ -38,7 +38,9 @@ class Creator
      *
      * @return string The declare statement.
      */
-    public function declare()
+    public function
+
+    declare()
     {
         return "\ndeclare(strict_types=1);\n\n";
     }
@@ -189,7 +191,7 @@ class Creator
         mixed $defaultValue = '--'
     ) {
         $static_ = $static ? 'static ' : '';
-        $defaultValue_ = $defaultValue !== '--' ? sprintf(' = %s', $this->changeTypeToString($defaultValue)) : '';
+        $defaultValue_ = $defaultValue === '--' ?  '' : sprintf(' = %s', $this->changeTypeToString($defaultValue));
         return sprintf("\n\t%s %s%s $%s%s;\n", $type, $static_, $typeVar, $name, $defaultValue_);
     }
 

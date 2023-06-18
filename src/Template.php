@@ -253,7 +253,7 @@ class Template implements TemplateInterface
                 $methodClone['args'][] =  [
                     'type' =>  $type,
                     'name' =>  $name,
-                    'defaultValue' => $defaultValue = '--' ? $defaultValue : '',
+                    'defaultValue' => $defaultValue !== '--' ? $defaultValue : null,
                 ];
                 array_shift($clone->methods);
                 $clone->methods[] = $methodClone;
