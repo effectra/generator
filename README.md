@@ -1,4 +1,4 @@
-# Effectra\Generator Package
+# Effectra\Generator
 
 The Effectra\Generator package provides a set of tools for generating PHP class files and configuration files.
 
@@ -87,8 +87,4 @@ Contributions are welcome! If you find any issues or would like to suggest new f
 ## License
 
 This package is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-```
 
-Feel free to modify and customize the README file according to your specific requirements.
-
-Let me know if there's anything else I can assist you with!
