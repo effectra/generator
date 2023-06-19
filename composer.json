@@ -15,7 +15,9 @@
         }
     ],
     "require": {
-        "php": "^8.0.2"
+        "effectra/config":"1.0",
+        "effectra/fs":"1.0",
+        "effectra/to-string":"1.0"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
