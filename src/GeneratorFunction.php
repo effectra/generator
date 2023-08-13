@@ -35,8 +35,8 @@ class GeneratorFunction extends Template
      */
     public function generate(): TemplateInterface
     {
-        $clone = clone $this;
-        $clone->fileContent .= $this->creator->createFunctionIfNotExists(name: $this->functionName);
+        // $clone = clone $this;
+        // $clone->fileContent .= $this->creator->createFunction(name: $this->functionName);
         return $clone;
     }
 

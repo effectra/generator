@@ -16,8 +16,8 @@
     ],
     "require": {
         "effectra/config":"1.0",
-        "effectra/fs":"1.0",
-        "effectra/to-string":"1.0"
+        "effectra/fs":"*",
+        "effectra/to-string":"*"
     },
     "minimum-stability": "stable"
 }
